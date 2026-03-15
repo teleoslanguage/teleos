@@ -5,11 +5,13 @@
 **Version:** 1.0
 
 Teleos is built to be the hardest yet most readable language ever made.
-New Changelogs:
+
+Changelogs
 
 - Added cpu_usage : %
 - Added ram_usage : %
-- Do not use the current fetch, it doesn't work fall back to the community modules.
+- Do not use the current fetch, it doesn't work fall back to the community modules. (Or use os.run)
+
 ---
 
 ## Installing (Admin Auto-Prompted)
@@ -68,7 +70,7 @@ teleos myscript.tslc
 
 Runs identically to the original. Auto-detected as compiled.
 
-> ⚠️ **Never run `.tslc` files from untrusted sources.** Compiled files hide their source you cannot inspect what they will do before running.
+> ⚠️ **Never run `.tslc` files from untrusted sources.** Compiled files hide their source — you cannot inspect what they will do before running.
 
 ---
 
@@ -492,12 +494,10 @@ file.mkdir("myfolder")
 
 ```
 system.hardware;call;find = "hardware", "cpu" = variable1
-system.hardware;call;find = "hardware", "cpu_usage" = variable1
 system.hardware;call;find = "hardware", "vram" = variable1
 system.hardware;call;find = "hardware", "storage" = variable1
 system.hardware;call;find = "hardware", "gpu" = variable1
 system.hardware;call;find = "hardware", "ram" = variable1
-system.hardware;call;find = "hardware", "ram_usage" = variable1
 system.hardware;call;find = "hardware", "global" = variable1
 console.output(variable1)
 ```
@@ -545,18 +545,6 @@ os.sleep(1000)         ` sleep 1000ms `
 os.run("echo hello")   ` run a shell command `
 os.exit(0)             ` exit with code `
 os.args = args         ` command line arguments as table `
-```
-
----
-
-### API / HTTP Fetch (Windows native WinHTTP)
-
-```
-fetch(api.system) do
- create var = api > call
- call.fetch.api.system == "https://api.example.com"
- console.output(result;{api.call})
-end
 ```
 
 ---
@@ -661,8 +649,3 @@ console.output(varmodule)
 | `mymodule.tsl` | Module definition |
 | `importdemo.tsl` | Module import (run from examples/) |
 | `fulldemo.tsl` | Everything combined |
-
-
----
-
-# The README.md may not contain the full functions and code, so please always check other sources, and trusted sources only.
