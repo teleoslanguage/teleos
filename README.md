@@ -68,7 +68,7 @@ teleos myscript.tslc
 
 Runs identically to the original. Auto-detected as compiled.
 
-> ⚠️ **Never run `.tslc` files from untrusted sources.** Compiled files hide their source — you cannot inspect what they will do before running.
+> ⚠️ **Never run `.tslc` files from untrusted sources.** Compiled files hide their source you cannot inspect what they will do before running.
 
 ---
 
@@ -659,3 +659,8 @@ console.output(varmodule)
 | `mymodule.tsl` | Module definition |
 | `importdemo.tsl` | Module import (run from examples/) |
 | `fulldemo.tsl` | Everything combined |
+
+
+---
+
+# The README.md may not contain the full functions and code, so please always check other sources, and trusted sources only.
