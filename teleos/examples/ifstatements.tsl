@@ -1,0 +1,12 @@
+` If Statements Demo `
+
+create var = var1 > "Hello"
+create var = var2 > true
+
+do if variable; var = var1 == "Hello" then
+ do console.output("var1 is Hello!")
+end
+
+do if variable; var = var2 == true then
+ do console.output("var2 is true!")
+end

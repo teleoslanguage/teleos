@@ -1,0 +1,35 @@
+` Table Operations `
+
+create var = fruits > {["apple"], ["banana"], ["cherry"]}
+console.output(fruits)
+
+table.push(fruits, "mango")
+console.output(fruits)
+
+table.len(fruits) = tlen
+console.output(tlen)
+
+table.get(fruits, 0) = first
+console.output(first)
+
+table.set(fruits, 1, "blueberry")
+console.output(fruits)
+
+table.contains(fruits, "cherry") = hascherry
+console.output(hascherry)
+
+table.remove(fruits, 0)
+console.output(fruits)
+
+table.sort(fruits) = sorted
+console.output(sorted)
+
+table.slice(fruits, 0, 2) = sliced
+console.output(sliced)
+
+create var = more > {["dragonfruit"], ["elderberry"]}
+table.merge(fruits, more) = merged
+console.output(merged)
+
+table.keys(fruits) = keys
+console.output(keys)

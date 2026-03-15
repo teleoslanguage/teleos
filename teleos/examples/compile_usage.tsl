@@ -1,0 +1,21 @@
+` Compile Usage Demo `
+` `
+` To hide this source code, run: `
+` teleos compile compile_usage.tsl `
+` `
+` This produces compile_usage.tslc which is unreadable `
+` Run it with: teleos compile_usage.tslc `
+` The .tslc file runs exactly like the .tsl file `
+
+create var = secret_key > "password123"
+create var = app_name > "My Teleos App"
+
+console.output("App: " + app_name)
+console.output("Version: 1.0")
+
+define check_key(input) then
+ return input == secret_key
+end
+
+console.output(check_key("password123"))
+console.output(check_key("wrong"))

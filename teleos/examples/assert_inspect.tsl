@@ -1,0 +1,22 @@
+` Assert and Inspect `
+
+` assert halts with error if condition fails `
+assert 1 == 1, "Math is broken"
+assert 2 + 2 == 4, "Addition is broken"
+console.output("All assertions passed!")
+
+` assert with a variable `
+create var = score > 95
+assert score > 50, "Score too low!"
+console.output("Score passed assertion")
+
+` inspect prints type and value info `
+create var = n > 42
+create var = s > "hello"
+create var = b > true
+create var = t > {["a"], ["b"]}
+
+inspect(n)
+inspect(s)
+inspect(b)
+inspect(t)

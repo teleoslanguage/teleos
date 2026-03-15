@@ -1,0 +1,18 @@
+` Console Print (no newline) `
+
+` console.print does NOT add a newline `
+` console.println DOES add a newline `
+` console.output always adds a newline `
+
+console.print("Loading")
+console.print(".")
+console.print(".")
+console.print(".")
+console.println(" Done!")
+
+create var = i > 0
+repeat i until == 5 num then
+ console.print(i)
+ console.print(" ")
+end
+console.println("")

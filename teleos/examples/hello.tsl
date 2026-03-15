@@ -1,0 +1,3 @@
+` Hello World in Teleos `
+
+console.output("Hello, World!")

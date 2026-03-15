@@ -1,0 +1,48 @@
+` String Operations `
+
+create var = s > "  Hello, Teleos World!  "
+
+string.trim(s) = trimmed
+console.output(trimmed)
+
+string.upper(trimmed) = up
+console.output(up)
+
+string.lower(trimmed) = lo
+console.output(lo)
+
+string.len(trimmed) = slen
+console.output(slen)
+
+string.replace(trimmed, "World", "Universe") = replaced
+console.output(replaced)
+
+string.contains(trimmed, "Teleos") = found
+console.output(found)
+
+string.split("one,two,three,four", ",") = parts
+console.output(parts)
+
+string.join(parts, " | ") = joined
+console.output(joined)
+
+string.reverse("Teleos") = rev
+console.output(rev)
+
+string.sub("Hello World", 6, 5) = sub
+console.output(sub)
+
+string.starts("Teleos", "Tel") = sw
+console.output(sw)
+
+string.ends("Teleos", "eos") = ew
+console.output(ew)
+
+string.format("Name: {} | Version: {}", "Teleos", "1.0") = formatted
+console.output(formatted)
+
+string.repeat("ha", 3) = rep
+console.output(rep)
+
+string.find("Hello World", "World") = pos
+console.output(pos)

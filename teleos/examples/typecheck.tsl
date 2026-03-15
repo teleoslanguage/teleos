@@ -1,0 +1,27 @@
+` Type System `
+
+create var = n > 42
+create var = s > "hello"
+create var = b > true
+create var = t > {["a"], ["b"]}
+
+type.of(n) = tn
+type.of(s) = ts
+type.of(b) = tb
+type.of(t) = tt
+console.output(tn)
+console.output(ts)
+console.output(tb)
+console.output(tt)
+
+type.is(n, "number") = isnumber
+type.is(s, "string") = isstring
+console.output(isnumber)
+console.output(isstring)
+
+type.cast(n, "string") = ns
+type.cast("99", "number") = sn
+type.cast(0, "boolean") = zerobool
+console.output(ns)
+console.output(sn)
+console.output(zerobool)
