@@ -1,0 +1,19 @@
+` Hardware Monitoring `
+
+system.hardware;call;find = "hardware", "cpu" = cpu
+system.hardware;call;find = "hardware", "cpu_usage" = cpuuse
+system.hardware;call;find = "hardware", "ram" = ram
+system.hardware;call;find = "hardware", "ram_usage" = ramuse
+system.hardware;call;find = "hardware", "gpu" = gpu
+system.hardware;call;find = "hardware", "vram" = vram
+system.hardware;call;find = "hardware", "storage" = storage
+system.hardware;call;find = "hardware", "global" = all
+
+console.output(cpu)
+console.output(cpuuse)
+console.output(ram)
+console.output(ramuse)
+console.output(gpu)
+console.output(vram)
+console.output(storage)
+console.output(all)

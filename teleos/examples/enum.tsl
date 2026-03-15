@@ -1,0 +1,35 @@
+` Enums `
+
+enum Direction then
+ NORTH, SOUTH, EAST, WEST
+end
+
+console.output(NORTH)
+console.output(SOUTH)
+console.output(EAST)
+console.output(WEST)
+
+create var = heading > EAST
+do if heading == EAST then
+ do console.output("Heading East!")
+end
+
+enum Status then
+ PENDING, ACTIVE, PAUSED, DONE
+end
+
+create var = job > ACTIVE
+switch(job) then
+ case PENDING then
+  console.output("Job is pending.")
+ end
+ case ACTIVE then
+  console.output("Job is active.")
+ end
+ case DONE then
+  console.output("Job is done.")
+ end
+ default then
+  console.output("Job is paused.")
+ end
+end

@@ -1,0 +1,6 @@
+` Module definition `
+
+export module(global)
+
+create var = varmodule > "Hello from module!"
+create var = moduleversion > 1

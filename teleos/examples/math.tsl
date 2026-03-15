@@ -1,0 +1,13 @@
+` Math Demo `
+
+math.call; 1+1 = output
+ console.output(output)
+end
+
+math.call; 10*5 = result
+ console.output(result)
+end
+
+math.call; 100/4 = division
+ console.output(division)
+end

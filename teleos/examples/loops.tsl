@@ -1,0 +1,14 @@
+` Loops Demo `
+
+create var = counter > 0
+
+repeat counter until == 5 num then
+ console.output("Counting...")
+end
+
+create var = inf > 0
+
+repeat inf until == nil num then
+ console.output("Infinite loop tick")
+ repeat(finish)
+end

@@ -1,0 +1,36 @@
+` OS and System Info `
+
+os.platform = plat
+console.output(plat)
+
+os.cwd = cwd
+console.output(cwd)
+
+os.date = datestr
+console.output(datestr)
+
+os.time = ts
+console.output(ts)
+
+os.env("PATH") = pathenv
+console.output(pathenv)
+
+` Math extras `
+math.floor(9.7) = fl
+console.output(fl)
+math.ceil(9.1) = cl
+console.output(cl)
+math.sqrt(144) = sq
+console.output(sq)
+math.abs(-77) = ab
+console.output(ab)
+math.pow(3, 4) = pw
+console.output(pw)
+math.sin(0) = sn
+console.output(sn)
+math.cos(0) = cs
+console.output(cs)
+math.log(1) = lg
+console.output(lg)
+math.random(1, 100) = rnd
+console.output(rnd)
