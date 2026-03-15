@@ -1,6 +1,0 @@
-` Module Import Demo `
-
-import "mymodule.tsl"
-
-console.output(varmodule)
-console.output(moduleversion)
