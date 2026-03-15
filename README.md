@@ -492,10 +492,12 @@ file.mkdir("myfolder")
 
 ```
 system.hardware;call;find = "hardware", "cpu" = variable1
+system.hardware;call;find = "hardware", "cpu_usage" = variable1
 system.hardware;call;find = "hardware", "vram" = variable1
 system.hardware;call;find = "hardware", "storage" = variable1
 system.hardware;call;find = "hardware", "gpu" = variable1
 system.hardware;call;find = "hardware", "ram" = variable1
+system.hardware;call;find = "hardware", "ram_usage" = variable1
 system.hardware;call;find = "hardware", "global" = variable1
 console.output(variable1)
 ```
